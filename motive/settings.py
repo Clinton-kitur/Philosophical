@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7=b#$ubbisl^qoig6@_4+brkzxd47r6jzes%b2x05q4g11_*gk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [127.0.0.1]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'philo-quotes.onrender.com']
 
 
 # Application definition
