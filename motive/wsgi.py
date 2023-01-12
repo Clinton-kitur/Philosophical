@@ -13,4 +13,4 @@ from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'motive.settings')
 
-gunicorn -w motive.wsgi:application
+gunicorn motive.wsgi:application
