@@ -22,6 +22,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 from pathlib import Path
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'quoteapp',
+        'USER': 'quoteapp_user',
+        'PASSWORD': 'Z03C99OQk66W0Klqg2qCv9T48hLjNBMc',
+        'HOST': 'dpg-cesq06da499cn4gic390-a',
+        'PORT': '5432',
+    }
+}
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -31,9 +42,9 @@ from pathlib import Path
 SECRET_KEY = 'django-insecure-7=b#$ubbisl^qoig6@_4+brkzxd47r6jzes%b2x05q4g11_*gk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["https://philosophi.onrender.com"]
+ALLOWED_HOSTS = ["local host", '127.0.0.1' ]
 
 
 # Application definition
