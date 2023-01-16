@@ -18,7 +18,4 @@ class QuoteDetailView(generics.RetrieveAPIView):
         quote = Quote.objects.all()[random_index]
         serializer = self.get_serializer(quote)
         return Response(serializer.data)
-   
-class QuoteCreateView(generics.CreateAPIView):
-    queryset = Quote.objects.all()
-    serializer_class = QuoteSerializer
+ 
