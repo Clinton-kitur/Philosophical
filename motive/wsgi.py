@@ -14,3 +14,5 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'motive.settings')
 
 application = get_wsgi_application()
+web: gunicorn motive.wsgi:application --log-file -
+create_superuser: python manage.py createsuperuser
